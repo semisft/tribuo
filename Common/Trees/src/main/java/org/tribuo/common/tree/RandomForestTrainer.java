@@ -54,6 +54,9 @@ public class RandomForestTrainer<T extends Output<T>> extends BaggingTrainer<T> 
         super(trainer,combiner,numMembers,seed);
     }
 
+    /**
+     * Used by the OLCUT configuration system, and should not be called by external code.
+     */
     @Override
     public void postConfig() {
         super.postConfig();
